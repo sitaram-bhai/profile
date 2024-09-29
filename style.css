@@ -1,0 +1,184 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cherish&family=Madimi+One&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Whisper&display=swap');
+
+:root{
+  --Cheris_font:cursive;
+  --Madimione_font: "Madimi One", sans-serif;
+  --Roboto_font: "Roboto", sans-serif;
+  --wisper_font: "Whisper", cursive;
+  --poppins_font:"Poppins", sans-serif;
+  --heading_color:rgb(255, 255, 255);
+  --banner_color:rgb(0, 0, 0);
+  --button_color: rgb(255, 179, 0);
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--poppins_font);
+}
+
+body{
+    background-color:rgb(255, 255, 255);
+    padding:0px 20px;
+}
+
+header{
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index:2;
+    margin-bottom: 10px;
+    height: 12vh;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color:var(--heading_color);
+    border:1px solid white ;
+border-radius: 0px 0px 20px 20px;
+backdrop-filter: blur(5px);
+}
+
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+list-style: none;
+width:45vw;
+    
+}
+
+.active{
+    color: rgb(0, 0, 0);
+    text-shadow:0px 0px 19px  rgba(238, 238, 238, 0.938);
+
+}
+header ul li a{
+    color: rgb(0, 0, 0);
+    font-weight:500;
+    text-decoration: none;
+    font-size:.9rem;
+    transition: all .1s linear;
+    
+}
+
+header ul li a:hover{
+    color: rgb(0, 0, 0);
+    text-shadow:0px 0px 19px  rgba(183, 179, 173, 0.862);
+}
+
+.brand{
+    font-size: 1.8rem;   
+    font-family:var(--Cheris_font); 
+    color: var(--heading_color);
+    border-radius:5px 50px 5px 50px;
+    padding: 0px 20px 0px 20px;
+    background-color: var(--button_color);
+    background-color: rgb(255, 115, 0);
+    color: rgb(255, 255, 255);
+}
+
+#lt_button{
+    height: 6vh;
+        width: 10vw;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        font-size: 1.1rem;
+        font-family: var(--Madimione_font);
+        color:var(--banner_color);
+        cursor: pointer;
+        background-color:var(--button_color);
+        color: rgb(0, 0, 0);
+
+}
+
+main{
+    height: 100%;
+    width: 100%;
+background-color: white;
+padding: 50px 10px 0px 10px;
+padding:100px;
+border-radius: 20px;
+border: 1px solid white;
+background: linear-gradient(to left ,rgb(60, 97, 97) 69%,rgb(27, 63, 77) 7%,black);
+background:url(https://images.unsplash.com/photo-1710270820362-aa9829a786f3?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D);
+background: url(https://images.unsplash.com/photo-1708545158412-ae3d000a2edf?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+background: url(https://images.unsplash.com/photo-1710599901865-0506a7cf062e?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+background-repeat: no-repeat;
+background-size:100% 100%;
+}
+
+main .container{
+    height: 80vh;
+    width: 100%;
+    
+}
+
+.subcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50vh;
+    width: 100%;
+
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:100%;
+    width: 40vw;
+    background-color:white ;
+    border-radius: 15px;
+    padding: 10px;
+    gap: 10px;
+    box-shadow:1px 1px 5px white;
+    backdrop-filter: blur(5px);
+
+}
+
+.profilepicture{
+    height:19vw;
+    background: radial-gradient(skyblue,white,skyblue,skyblue);
+    border-radius:50px 2px 50px 2px;
+}
+
+.content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+    padding: 40px 0px 40px 0px;
+    color: rgb(0, 0, 0);
+}
+
+.container p{
+    font-size: 1rem;
+}
+
+.container h3{
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+
+}
+
+footer{
+    height: 10vh;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+}
+
+.cont{
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 2px 20px  black;
+}
